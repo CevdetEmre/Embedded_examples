@@ -1,0 +1,25 @@
+--cpu Cortex-M0+
+"timer_deneme\startup_stm32l053xx.o"
+"timer_deneme\main.o"
+"timer_deneme\stm32l0xx_it.o"
+"timer_deneme\stm32l0xx_hal_msp.o"
+"timer_deneme\stm32l0xx_hal_tim.o"
+"timer_deneme\stm32l0xx_hal_tim_ex.o"
+"timer_deneme\stm32l0xx_hal.o"
+"timer_deneme\stm32l0xx_hal_i2c.o"
+"timer_deneme\stm32l0xx_hal_i2c_ex.o"
+"timer_deneme\stm32l0xx_hal_rcc.o"
+"timer_deneme\stm32l0xx_hal_rcc_ex.o"
+"timer_deneme\stm32l0xx_hal_flash_ramfunc.o"
+"timer_deneme\stm32l0xx_hal_flash.o"
+"timer_deneme\stm32l0xx_hal_flash_ex.o"
+"timer_deneme\stm32l0xx_hal_gpio.o"
+"timer_deneme\stm32l0xx_hal_dma.o"
+"timer_deneme\stm32l0xx_hal_pwr.o"
+"timer_deneme\stm32l0xx_hal_pwr_ex.o"
+"timer_deneme\stm32l0xx_hal_cortex.o"
+"timer_deneme\system_stm32l0xx.o"
+--library_type=microlib --strict --scatter "timer_deneme\timer_deneme.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "timer_deneme.map" -o timer_deneme\timer_deneme.axf
